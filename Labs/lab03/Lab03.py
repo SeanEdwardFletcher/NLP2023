@@ -22,8 +22,8 @@ nltk.download("punkt")
 
 
 # global variables
-law_posts_record = PostParserRecord("Law_Posts.xml")
 post_file_path = "Law_Posts.xml"
+law_posts_record = PostParserRecord(post_file_path)
 post_reader = PostParserRecord(post_file_path)
 stop_words = set(stopwords.words('english'))
 limit = 5
