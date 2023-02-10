@@ -1,3 +1,4 @@
+
 # NLP 2023
 # Lab 03
 # Faranak JahediBashiz, Sean Fletcher
@@ -15,7 +16,7 @@ from collections import Counter
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
-#nltk.download('stopwords')
+nltk.download('stopwords')
 nltk.download("punkt")
 # end of imports
 
@@ -214,6 +215,7 @@ def question_bodies_by_tag(list_of_tags):
 # end of functions
 
 
+# function calls
 five_most_common_tags = find_frequent_tag(law_posts_record, 5)
 tag01 = [five_most_common_tags[0]]
 tag02 = [five_most_common_tags[1]]
@@ -228,9 +230,10 @@ tag05 = [five_most_common_tags[4]]
 # build_a_wordcloud(cleaned_string, 30)
 
 # # Lab03 Step 03 call
-big_string_of_question_bodies = question_bodies_by_tag(five_most_common_tags)
-cleaned_string = string_cleaner(big_string_of_question_bodies)
-build_a_wordcloud(string_stemmer(cleaned_string), 30, use_stemmer=True)
+# big_string_of_question_bodies = question_bodies_by_tag(five_most_common_tags)
+# cleaned_string = string_cleaner(big_string_of_question_bodies)
+# build_a_wordcloud(string_stemmer(cleaned_string), 30, use_stemmer=True)
+
 
 # Lab03 Step 04 calls
 
@@ -258,3 +261,5 @@ build_a_wordcloud(string_stemmer(cleaned_string), 30, use_stemmer=True)
 # tag05_Q_body = question_bodies_by_tag(tag05)
 # clean_tag05_string = string_cleaner(tag05_Q_body)
 # plot_frequency_distribution(clean_tag05_string, tag05[0])
+
+# end of function calls
