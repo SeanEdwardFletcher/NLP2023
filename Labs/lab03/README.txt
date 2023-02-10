@@ -6,7 +6,6 @@ post_parser_record_lab03.py
 README.txt (this file)
 
 
-
 Post and post_parser_record (ppr) are classes that iterate through 
    and create objects to structure and parse .xml files downloaded 
    from Stack Exchange (https://archive.org/download/stackexchange).
