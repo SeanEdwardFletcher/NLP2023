@@ -6,8 +6,9 @@ plot_the_training_epochs creates a graph out of data from a TSV file
 The main file to look at the Ass_03.py.
 
 80-99 gets all the questions and answers from the Posts_law.xml file,
-preprocesses the text of the questions and answers and then trains and saves a FastText model
-uncomment to run it.
+preprocesses the text of the questions and answers and then trains and 
+saves a FastText model.
+Uncomment to run it.
 
 104 loads an already trained model
 
