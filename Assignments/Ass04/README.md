@@ -27,7 +27,7 @@ To run this notebook, you will need to install the following libraries:
     
 ## Usage
 
-- Download the .xml file from Law Stack Exchange
+- Download the .xml file from Law Stack Exchange; please label it "Posts_law.xml"
 - Run python scripts step_one.py, step_two.py, and step_three.py in order.
 
 
