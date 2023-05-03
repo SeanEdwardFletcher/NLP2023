@@ -53,7 +53,9 @@ main.py
 - You will need to add three directory paths at the top of main.py
 - These directories will be where you save your downloaded json files of scientific articles.
 - You will need to add the file path to the SimpleText dataset.
+
 IMPORTANT!
+
 I do not suggest running the whole file at once. Look at each section and run the sections you need sepperately.
 
 There are sections that focus on downloading relevant json files of scientific abstracts.
