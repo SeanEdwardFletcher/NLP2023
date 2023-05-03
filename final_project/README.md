@@ -79,20 +79,24 @@ My final results come from comparing lists of extracted keywords from the news a
 ## Results
 
 Baseline
-NDCG@10 score: 0.399
-MAP score: 0.461
-~*~
+
+- NDCG@10 score: 0.399
+- MAP score: 0.461
+
+
 YAKE
-NDCG@10 score: 0.092
-MAP score: 0.131
-~*~
+- NDCG@10 score: 0.092
+- MAP score: 0.131
+
+
 YAKE + QT 
-NDCG@10 score: 0.107
-MAP score: 0.122
-~*~
+- NDCG@10 score: 0.107
+- MAP score: 0.122
+
+
 YAKE + QT + GS
-NDCG@10 score: 0.133
-MAP score: 0.133
+- NDCG@10 score: 0.133
+- MAP score: 0.133
 
 
 ## Conclusion
