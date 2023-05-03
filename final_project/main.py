@@ -8,9 +8,11 @@ from sentence_bert_tools import *
 
 
 
-directory_of_large_json_files_from_elastic_search = '/Users/seanfletcher/Desktop/simple_text_json_files/query_results_500/'
-directory_of_json_files_from_the_qrel_file = '/Users/seanfletcher/Desktop/simple_text_json_files/qrel_articles/'
-directory_of_top_100_query_results = '/Users/seanfletcher/Desktop/simple_text_json_files/query_results_100/'
+directory_of_large_json_files_from_elastic_search = 'first directory path here'
+directory_of_json_files_from_the_qrel_file = 'second directory path here'
+directory_of_top_100_query_results = 'third directory path here'
+simple_text_training_data_path = 'path to training data file here'
+
 
 # ***********************************************************************************************
 # this call uses the API provided by Simple Text to call each query provided by simple text
@@ -21,7 +23,7 @@ download_elastic(directory_of_top_100_query_results, 100)
 
 # ***********************************************************************************************
 # splitting the qrel file into separate training and validation qrel files
-the_qrel_file_from_SimpleText = "simpletext_2023_task1_train.qrels"
+the_qrel_file_from_SimpleText = simple_text_training_data_path
 training_qrel_file_name = "Seans_qrel_file_training"
 validation_qrel_file_name = "Seans_qrel_file_validation"
 test_qrel_file_name = "Seans_qrel_file_test"
@@ -34,7 +36,7 @@ split_the_qrel_file(
 
 # ***********************************************************************************************
 # downloading json files that correspond to all the articles in the qrel file
-qrel_file_path = "simpletext_2023_task1_train.qrels"
+qrel_file_path = simple_text_training_data_path
 qrel_file = open(qrel_file_path, "r")
 for line in qrel_file:
     # Split the line into its components (query ID, a zero, document ID, and relevance score)
