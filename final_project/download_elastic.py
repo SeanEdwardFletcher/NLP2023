@@ -5,6 +5,8 @@ import json
 # directory to save the top-2000(ish) results per query using elastic search API
 the_directory = 'put your directory here'
 
+user = 'your user name here'
+password = 'your password here'
 
 def download_elastic(target_dir, num_of_results):
     # Reading the topic file
@@ -13,7 +15,6 @@ def download_elastic(target_dir, num_of_results):
         # skip header
         next(reader)
 
-        user, password = 'inex', 'qatc2011'
         pre_qid = ""
         counter = 1
         for line in reader:
